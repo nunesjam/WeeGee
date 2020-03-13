@@ -8,7 +8,7 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/javafx13"/>
-	<classpathentry kind="lib" path="D:/Java Workspace/WeeGeeFX/WeeGee/lib/AnimateFX-1.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/AnimateFX-1.2.0.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/apache"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

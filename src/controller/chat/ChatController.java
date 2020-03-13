@@ -18,7 +18,7 @@ import javafx.scene.layout.AnchorPane;
 public class ChatController {
 
 	private MainController main;
-	
+
 	@FXML
 	public AnchorPane paneChatWindow;
 	@FXML
@@ -26,7 +26,7 @@ public class ChatController {
 	@FXML
 	public TextArea txtMessages;
 	@FXML
-	public ListView <String> listMessages;
+	public ListView<String> listMessages;
 	@FXML
 	private Button btnSend;
 
@@ -54,10 +54,9 @@ public class ChatController {
 
 	public void printMessage(String message, String userName) {
 		String[] splitString = StringUtils.split(message, ":", 2);
-		if (userName.equals(splitString[0])) {
-			System.out.println(Arrays.toString(splitString));	
-			listMessages.getItems().add(message);
-		}
+
+		System.out.println(Arrays.toString(splitString));
+		listMessages.getItems().add(message);
 
 	}
 }
