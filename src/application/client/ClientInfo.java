@@ -3,6 +3,7 @@ package application.client;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.MulticastSocket;
+import java.net.UnknownHostException;
 
 public class ClientInfo {
 	private String userName;
@@ -10,10 +11,15 @@ public class ClientInfo {
 	private int port;
 	private MulticastSocket socket;
 	
-	public ClientInfo() {
-		setUserName(userName);
-		setChatIP(chatIP);
-		setPort(port);
+	public ClientInfo(){
+		setUserName("");
+		try {
+			setChatIP(InetAddress.getByName("255.0.0.0"));
+		} catch (UnknownHostException e) {
+			System.err.println("Standard Constructor in ClientInfo");
+			e.printStackTrace();
+		}
+		setPort(1234);
 		setSocket(socket);
 	}
 	

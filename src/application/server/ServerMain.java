@@ -17,7 +17,7 @@ public class ServerMain {
 	private MainController main;
 
 	public ServerMain() {
-		System.out.println("Enter valid Parameters");
+		System.out.println("Enter valid Parameters"); 
 	}
 
 	public ServerMain(String chatIP, int port, String userName, MainController mainController) {
