@@ -42,6 +42,7 @@ public class ServerMain {
 			// Time to Live auf 0 auf Localhost -> Intranet würde ich Anzahl der Computer
 			// plus 1 setzen.
 			this.socket.setTimeToLive(0);
+			this.socket.joinGroup(this.chatIP);
 			// Thread der nebenläufig läuft und einkommende Nachrichten liest
 			Thread threadChat = new Thread(new ReadThread(this.socket, this.chatIP, this.port, this.main));
 			threadChat.setName("Message-Receiver");
